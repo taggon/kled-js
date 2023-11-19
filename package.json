@@ -17,6 +17,7 @@
     "name": "Taegon Kim",
     "url": "https://taegon.kim"
   },
+  "license": "MIT",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "bun test",
