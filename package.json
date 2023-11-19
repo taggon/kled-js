@@ -3,6 +3,19 @@
   "version": "0.1.0",
   "module": "dist/lib.js",
   "type": "module",
+  "keywords": [
+    "fuzzy",
+    "string",
+    "search",
+    "levenshtein",
+    "distance",
+    "similarity",
+    "korean"
+  ],
+  "author": {
+    "name": "Taegon Kim",
+    "url": "https://taegon.kim"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "bun test",

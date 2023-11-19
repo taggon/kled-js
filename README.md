@@ -1,5 +1,7 @@
 # kled.js
 
+Also available in: [한국어](./docs/README-ko.md)
+
 KLED: Fuzzy Matching Library with Levenshtein Edit Distance, Tailored for Korean Language Support
 
 ## APIs
@@ -22,7 +24,7 @@ The Levenshtein distance between the input strings.
 
 Calculate the similarity score between two strings, providing a numerical value between 0 and 1. If the "haystack" does not contain the "needle," the function returns 0.
 
-It also supports partial Korean letter matching. For example, "ㅇㄴ" matches "안녕" with a slightly lower score than "안녕", which exactly matches the haystack.
+It also supports partial Korean letter matching. For example, "ㅇㄴ" and "아녀" matches "안녕" with a slightly lower score than "안녕", which exactly matches the haystack.
 
 **Parameters**
 
