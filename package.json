@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "module": "dist/lib.js",
   "type": "module",
+  "types": "dist/lib.d.ts",
   "keywords": [
     "fuzzy",
     "string",
