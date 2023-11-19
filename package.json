@@ -1,0 +1,22 @@
+{
+  "name": "kled",
+  "version": "0.1.0",
+  "module": "dist/lib.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "bun test",
+    "coverage": "bun test --coverage",
+    "prepare": "bun run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
