@@ -1,6 +1,6 @@
 # kled.js
 
-Also available in: [한국어](./docs/README-ko.md)
+Also available in: [한국어](https://github.com/taggon/kled-js/blob/main/docs/README-ko.md)
 
 KLED: Fuzzy Matching Library with Levenshtein Edit Distance, Tailored for Korean Language Support
 
@@ -40,7 +40,7 @@ A similarity score between the input strings, where 0 indicates no similarity, a
 
 
 ```ts
-import { distance, matches } from 'your-string-matching-library';
+import { distance, matches } from 'kled';
 
 const levenshteinDistance = distance('hello', 'hola');
 console.log(`Levenshtein Distance: ${levenshteinDistance}`);

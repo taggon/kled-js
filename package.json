@@ -1,6 +1,6 @@
 {
   "name": "kled",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "module": "dist/lib.js",
   "type": "module",
   "keywords": [
@@ -23,7 +23,8 @@
     "prepare": "bun run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ],
   "devDependencies": {
     "bun-types": "latest",

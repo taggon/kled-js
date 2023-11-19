@@ -38,7 +38,7 @@ KLED: 한국어를 지원하는 레벤슈타인 편집 거리 알고리즘 기�
 
 
 ```ts
-import { distance, matches } from 'your-string-matching-library';
+import { distance, matches } from 'kled';
 
 const levenshteinDistance = distance('hello', 'hola');
 console.log(`Levenshtein Distance: ${levenshteinDistance}`);
