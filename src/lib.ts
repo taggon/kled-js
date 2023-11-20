@@ -1,4 +1,4 @@
-import * as korean from "./korean";
+import * as korean from './korean';
 
 /**
  * Get a Levenshtein distance between two strings
@@ -59,7 +59,7 @@ export function distance(a: string, b: string, caseSensitive = false): number {
  */
 export function matches(needle: string, haystack: string, caseSensitive = false): number {
   if (needle.length > haystack.length) {
-    throw new Error("haystack cannot be shorter than needle.");
+    throw new Error('haystack cannot be shorter than needle.');
   }
 
   if (!caseSensitive) {
@@ -67,8 +67,8 @@ export function matches(needle: string, haystack: string, caseSensitive = false)
     haystack = haystack.toLowerCase();
   }
 
-  const _needle = needle.split("");
-  let _haystack = haystack.split("");
+  const _needle = needle.split('');
+  let _haystack = haystack.split('');
 
   while (_needle.length > 0) {
     const ch = _needle[0];
@@ -77,7 +77,7 @@ export function matches(needle: string, haystack: string, caseSensitive = false)
     if (!korean.isKorean(ch) || korean.hasFinal(ch)) {
       idx = _haystack.indexOf(ch);
     } else {
-      idx = _haystack.findIndex((c) => korean.isSimilar(c, ch) && (c >= ch));
+      idx = _haystack.findIndex((c) => korean.isSimilar(c, ch) && c >= ch);
     }
 
     if (idx === -1) {
