@@ -30,6 +30,7 @@ export function isKorean(c: string): boolean {
  * Check whether two Korean letters are similar.
  */
 export function isSimilar(a: string, b: string): boolean {
+  if (a === b) return true;
   if (isConsonant(a) || isConsonant(b)) {
     return getConsonant(a) === getConsonant(b);
   }

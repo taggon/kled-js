@@ -46,6 +46,8 @@ describe('matches()', () => {
 
   it('returns zero when haystack does not contain needle', () => {
     expect(matches('dog', 'digging')).toBe(0);
+    expect(matches('고성', '군산')).toBe(0);
+    expect(matches('우산', 'ㅇ산')).toBe(0);
   });
 
   it('returns a number that shows how much similar two strings are', () => {

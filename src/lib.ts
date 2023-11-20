@@ -77,7 +77,7 @@ export function matches(needle: string, haystack: string, caseSensitive = false)
     if (!korean.isKorean(ch) || korean.hasFinal(ch)) {
       idx = _haystack.indexOf(ch);
     } else {
-      idx = _haystack.findIndex((c) => korean.isSimilar(c, ch));
+      idx = _haystack.findIndex((c) => korean.isSimilar(c, ch) && (c >= ch));
     }
 
     if (idx === -1) {
