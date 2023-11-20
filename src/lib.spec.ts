@@ -24,7 +24,6 @@ describe('matches()', () => {
     // Case-sensitive when specified
     expect(matches('foo', 'FOo', true)).toBe(0);
 
-    // Korean
     expect(matches('홍길동', '홍길동')).toBe(1);
   });
 
@@ -33,6 +32,12 @@ describe('matches()', () => {
 
     // Case-sensitive
     expect(matches('foo', 'FOO', true)).toBe(0);
+
+    // Korean
+    expect(matches('홍길동', '김철수')).toBe(0);
+    expect(matches('하길동', '홍길동')).toBe(0);
+    expect(matches('홍가동', '홍길동')).toBe(0);
+    expect(matches('홍가두', '홍길동')).toBe(0);
   });
 
   it('throws an error when needle is longer than haystack', () => {
@@ -49,7 +54,8 @@ describe('matches()', () => {
     expect(matches('brb', 'bring back')).toBeGreaterThan(matches('brb', 'Be Right Back'));
     expect(matches('강성', '서울시 강남구 삼성동')).toBeGreaterThan(0);
     expect(matches('강남', '서울시 강남구 삼성동')).toBeGreaterThan(0);
-    expect(matches('강남', '서울시 강남구 삼성동')).toBeGreaterThan(matches('강성', '서울시 강남구 삼성동'));
+    expect(matches('ㄱㄴ', '서울시 강남구 삼성동')).toBeGreaterThan(0);
+    expect(matches('강남', '서울시 강남구 삼성동')).toBeGreaterThan(matches('ㄱㄴ', '서울시 강남구 삼성동'));
   });
 
   it('returns non-zero value if korean characters partially match', () => {
