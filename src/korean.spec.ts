@@ -18,5 +18,7 @@ describe('isSimilar()', () => {
     expect(isSimilar('ㄷ', '날')).toBe(false);
     expect(isSimilar('나', '날')).toBe(true);
     expect(isSimilar('눌', '날')).toBe(false);
+
+    expect(isSimilar('ㅊ', '춘')).toBe(true);
   });
 });

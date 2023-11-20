@@ -3,7 +3,7 @@
  * @file korean.ts
  */
 
-const CONSONANT_SYLLABLES = 'ㄱ가ㄲ까ㄴ나ㄷ다ㄸ따ㄹ라ㅁ마ㅂ바ㅃ빠ㅅ사ㅆ싸ㅇ아ㅈ자ㅉ짜ㅋ카ㅌ타ㅍ파ㅎ하';
+const CONSONANT_SYLLABLES = 'ㄱ가ㄲ까ㄴ나ㄷ다ㄸ따ㄹ라ㅁ마ㅂ바ㅃ빠ㅅ사ㅆ싸ㅇ아ㅈ자ㅉ짜ㅊ차ㅋ카ㅌ타ㅍ파ㅎ하';
 
 /**
  * Check whether a letter is a vowel.
