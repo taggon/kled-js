@@ -1,8 +1,8 @@
 # kled.js
 
-Also available in: [한국어](https://github.com/taggon/kled-js/blob/main/docs/README-ko.md)
+Fuzzy Matching Library with Levenshtein Edit Distance, Tailored for Korean Language Support
 
-KLED: Fuzzy Matching Library with Levenshtein Edit Distance, Tailored for Korean Language Support
+Also available in: [한국어](https://github.com/taggon/kled-js/blob/main/docs/README-ko.md)
 
 ## APIs
 
