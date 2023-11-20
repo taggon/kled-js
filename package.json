@@ -15,7 +15,12 @@
   ],
   "author": {
     "name": "Taegon Kim",
-    "url": "https://taegon.kim"
+    "url": "https://taegon.kim",
+    "email": "gonom9@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/taggon/kled-js.git"
   },
   "license": "MIT",
   "scripts": {
