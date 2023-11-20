@@ -27,14 +27,24 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "bun test",
     "coverage": "bun test --coverage",
-    "prepare": "bun run build"
+    "prepare": "bun run build",
+    "version": "auto-changelog -p --starting-version v0.1.4 && git add CHANGELOG.md"
   },
   "files": [
     "dist",
     "docs"
   ],
   "devDependencies": {
+    "auto-changelog": "^2.4.0",
     "bun-types": "latest",
     "typescript": "^5.2.2"
+  },
+  "auto-changelog": {
+    "output": "CHANGELOG.md",
+    "template": "keepachangelog",
+    "unreleased": false,
+    "commitLimit": false,
+    "backfillLimit": false,
+    "hideCredit": true
   }
 }
