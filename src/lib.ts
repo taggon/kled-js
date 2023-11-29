@@ -33,7 +33,7 @@ export function distance(a: string, b: string, caseSensitive = false): number {
       const aChar = a[j - 1];
       let korSimilarity = 0; // Similarity between Korean characters
 
-      if (bChar !== aChar && korean.isKorean(bChar) && korean.isKorean(bChar)) {
+      if (bChar !== aChar && korean.isKorean(aChar) && korean.isKorean(bChar)) {
         if (korean.isSimilar(aChar, bChar)) {
           korSimilarity = 0.01;
         }
